@@ -1,0 +1,17 @@
+
+
+ <api fetch using fetch> 
+const response = await fetch(url)
+    const data = await response.json()
+    if(!response.ok) {
+      console.log('Something went wrong')
+    } else {
+      console.log(data)
+    }
+ </api fetch using fetch>
+
+ <upper casing of letters> 
+<Text onPress={getLocation}>{location.description.split(' ')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ')}</Text>
+ </upper casing of letters>

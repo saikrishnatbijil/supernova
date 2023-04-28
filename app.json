@@ -21,10 +21,29 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.tuxev.supernova"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Supernova to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7330453b-3c4b-4ccf-ac31-c0616ea734cc"
+      }
     }
   }
 }
